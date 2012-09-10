@@ -1,0 +1,124 @@
+/* @group CSS reset */
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+/* @end */
+
+/* @group containers */
+
+	body {
+		font-size: 24px;
+		height: 2000px;
+	}
+
+	.wrapper {
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		right: 0;
+		text-align: center;
+		top: 0;
+		font-size: 0; /* Fixes whitespace problem for display inline-block in .wrapper:after */
+	}
+
+	.wrapper:after {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+	.lightbox {
+		background-color: #ccf1ff;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+		display: inline-block;
+		font-size: 24px;
+		margin: 0 auto;
+		min-width: 266.6px;
+		padding: 10px;
+		text-align: justify;
+		-webkit-transition: all 0.5s ease-in-out; /* ease-in-out causes the smoothest change :) */
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+		vertical-align: middle;
+		width: 800px;
+	}
+
+/* @end  */
+
+/* @group elements */
+
+	.gallery {
+		font-size: 0;
+		margin: 0 auto 10px;
+		overflow: hidden;
+		padding: auto;
+		text-align: center;
+	}
+
+	.gallery-image {
+		display: inline-block;
+		margin: 0 1.5%;
+		width: 13%;
+	}
+
+	.citation {
+		float: right;
+		margin: 15px 10px 0 0;
+		text-transform: uppercase;
+		text-align: right;
+	}
+
+/* @end */
